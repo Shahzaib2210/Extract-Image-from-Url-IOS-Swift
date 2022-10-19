@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExtractImageFromUrl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V0T-DI-ICR">
+                                <rect key="frame" x="20.666666666666657" y="100" width="372.66666666666674" height="368"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rakha Por" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-Qc-wSO">
+                                <rect key="frame" x="20.666666666666657" y="488" width="372.66666666666674" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rakha Por" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-pu-Khi">
+                                <rect key="frame" x="20.666666666666657" y="536" width="372.66666666666674" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3rM-pu-Khi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="0jB-mE-QCM"/>
+                            <constraint firstItem="V0T-DI-ICR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="DWs-BH-j6U"/>
+                            <constraint firstItem="V0T-DI-ICR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="TRe-PS-k5T"/>
+                            <constraint firstItem="V0T-DI-ICR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ywn-nz-gam"/>
+                            <constraint firstItem="3rM-pu-Khi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbr-s9-pPi"/>
+                            <constraint firstItem="oeR-Qc-wSO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="hQH-Ce-mB4"/>
+                            <constraint firstItem="oeR-Qc-wSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2b-VX-oRH"/>
+                            <constraint firstItem="oeR-Qc-wSO" firstAttribute="top" secondItem="V0T-DI-ICR" secondAttribute="bottom" constant="20" id="sD4-Qu-4sA"/>
+                            <constraint firstItem="V0T-DI-ICR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="u6R-zv-Mvg"/>
+                            <constraint firstItem="3rM-pu-Khi" firstAttribute="top" secondItem="oeR-Qc-wSO" secondAttribute="bottom" constant="8" symbolic="YES" id="yxe-mH-sh8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSinger" destination="3rM-pu-Khi" id="cJc-Mw-rPh"/>
+                        <outlet property="labelTitle" destination="oeR-Qc-wSO" id="pLZ-ti-GGA"/>
+                        <outlet property="thumbnailImage" destination="V0T-DI-ICR" id="xr3-ev-4nQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
